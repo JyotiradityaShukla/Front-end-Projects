@@ -1,0 +1,187 @@
+
+body {
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	/* background: linear-gradient(#ffffff, #ffffff); */
+  }
+  
+  .login-box {
+	background-color: rgb(120, 166, 175);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 20rem;
+	height: 30rem;
+	padding: 2.5rem;
+	transform: translate(-50%, -50%);
+	background: rgba(201, 215, 225, 0.5);
+	box-shadow: 0 15px 25px rgba(162, 160, 160, 0.6);
+	border-radius: 0.6rem;
+  }
+  
+  .login-box h2 {
+	font-family: "Ubuntu", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 850;
+    font-style: normal;
+	margin: 0 0 1.9rem;
+	padding: 0;
+	color: #000000;
+	text-align: center;
+  }
+  
+  .login-box .user-box {
+	position: relative;
+  }
+  
+  .login-box .user-box input {
+	font-family: "Ubuntu", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 250;
+    font-style: normal;
+	width: 100%;
+	padding: 0.6rem 0;
+	font-size: 1rem;
+	color: #000000;
+	margin-bottom: 1.9rem;
+	border: none;
+	border-bottom: 1px solid #000000;
+	outline: none;
+	background: transparent;
+  }
+  
+  .login-box .user-box label {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 250;
+    font-style: normal;
+	position: absolute;
+	top:0;
+	left: 0;
+	padding: 0.6rem 0;
+	font-size: 1rem;
+	color: #000000;
+	pointer-events: none;
+	transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+	top: -1.3rem;
+	left: 0;
+	color: #000000;
+	font-size: 0.8rem;
+	font-weight: 450;
+  }
+
+  .forgot-pass{
+	margin-left: 11rem;
+  }
+
+  .forgot-pass a{
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 450;
+    font-style: normal;
+	text-decoration: none;
+	color: black;
+  }
+  
+  .button{
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 450;
+    font-style: normal;
+	margin-left:  7.2rem;
+	/* position: relative; */
+	display: inline-block;
+	padding: 0.6rem 1.3rem;
+	border: none;
+	/* color: #000000; */
+	font-size: 1rem;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: .5s;
+	margin-top: 2.5rem;
+	background: linear-gradient(to right,rgb(139, 127, 214),pink
+	) ;
+	border-radius: 0.8rem;
+  }
+  
+
+  .sign-options{
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 250;
+    font-style: normal;
+	letter-spacing: 0;
+	margin-left: 6.3rem;
+	margin-top: 0.5rem;
+  }
+
+
+  .options{
+	display: flex;
+	margin-top: 1.2rem;
+	margin-left: 7.45rem;
+	gap: 1rem;
+	/* margin-right: 0.2rem; */
+	/* justify-content: ; */
+  }
+
+
+  .signup-account{
+	/* text-align: center; */
+	/* margin-left: 4.5rem; */
+	/* padding: 0; */
+	margin-top: 3.5rem;
+  }
+
+
+  .account{
+	margin-left: 5rem;
+  }
+
+  .sign-up{
+	/* margin-top: 0.5rem; */
+	text-align: center;
+	/* display: inline-block; */
+	margin-left: 7.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center  ;
+	height: 2.5rem;
+	width: 5.5rem;
+	/* border:  solid 1px; */
+	/* background-color: blue; */
+	transition: box-shadow 0.2s ease; 
+  }
+
+
+  .sign-up:hover{
+	box-shadow: 0 0 12px rgba(41, 40, 40, 0.5); 
+  }
+
+
+  .sign-up a{
+	/* margin-top: 1.2rem; */
+	text-decoration: none;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 450;
+    font-style: normal;
+	color: #000000;
+  }
+
+  
+  /* .options{
+	margin-top: ;
+  }
+
+  .sign-img{
+	/* display: flex; */
+	/* height: 2rem;
+	width: 2rem;
+	margin-top: 1rem;
+  }
+
+  .sign-img1{
+	height: 2rem;
+	width: 2rem;
+  }  */

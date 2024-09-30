@@ -1,0 +1,786 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.nav{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  top: 0;
+  display: flex;
+  /* justify-content: space-between; */
+  background-color:rgb(11, 11, 11,0.5);
+  backdrop-filter: blur(5px);
+  height: 12vh;
+  flex-wrap: wrap;
+  position: sticky;
+  z-index: 10;
+  
+  
+}
+.desc{
+  
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+.desc h1{
+  color: white;
+  /* font-style: italic; */
+  filter: drop-shadow(10px 7px 10px gray);
+  transition: all 0.5s ease-in-out;
+}
+.desc h1:hover{
+  /* text-shadow: 0.5px 0.5px white;
+  box-shadow: 0px 0px 10px 0px rgb(100, 99, 99); */
+ 
+  
+  font-size: 2.05rem;
+}
+.desc img{
+  height: 2rem;
+  width: 2rem;
+  margin-left: 3%;
+  margin-right: 1%;
+}
+.desc input{
+  height: 55%;
+  width: 50%;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border: none;
+  margin-left: 10%;
+}
+.desc input::placeholder{
+  color: #7d7b7b;
+  font-size: 1.1rem;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.input-search{
+  padding-left: 2rem;
+  font-size: 1rem;
+}
+
+.desc i{
+  color: #7d7b7b;
+  background-color: white;
+  height: 55%;
+  width: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.desc i:hover{
+  cursor: pointer;
+  border: 2px solid black;
+  
+}
+
+.desc img:hover , h1:hover{
+  cursor: pointer;
+}
+.login{
+  width: 50%;
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login ul{
+  width:100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+.login a{
+  text-decoration: none;
+  color: white;
+  justify-content: space-evenly;
+  
+  font-weight: 500;
+  flex-direction: row;
+  flex-wrap: wrap;
+  transition: font-size 0.2s ease-in-out ;
+}
+
+
+.login i{
+  margin-left: 1rem;
+  font-size: 1.5rem  ;
+  color: white;
+  margin-right: 1%;
+  transition: font-size 0.3s ease-in-out;
+}
+.login i:hover{
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.login a:hover{
+  
+  /* color: rgb(126, 120, 120); */
+  font-weight: 700; 
+  font-size: 1.2rem;
+  /* color: rgb(15, 243, 197); */
+  /* color: rgb(86, 173, 162); */
+  /* color: rgb(80, 40, 214); */
+  color: rgb(244, 0, 8);  
+  font-weight: 700;
+  
+}
+
+.header{
+  background-image: url(./pictures/andrew-kliatskyi-d3YXpAqdy2I-unsplash.jpg);
+    margin: 0;
+    padding: 0;
+    height: 70vh;
+}
+
+.header {
+    position: relative; 
+}
+
+.header-pic{
+    width: 100%;
+    height: 18rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    margin-top: rem;
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    color: #fff; 
+    font-size: 24px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.overlay p {
+    margin: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.header-bar {
+    background-color: #f7f7f7;
+    padding: 10px;
+    width: 50%;
+    margin-top: 35px;
+    margin-left: 9.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.list-bar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-bar li {
+    margin: 0 20px;
+}
+
+.list-bar a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s ease;    
+}
+
+.list-bar a:hover {
+    color: #aaa;
+    text-decoration: underline;
+}
+
+.list-bar a.active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #666;
+}
+
+.list-bar li:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.list-bar li:last-child a {
+    margin-right: 10px;
+}
+
+.list-bar a {
+    cursor: pointer;
+}
+
+.list-bar a.active {
+    cursor: default;
+}
+
+
+
+
+.link-out {
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 90vw;
+    margin: 20px auto;
+  }
+  
+  #input-box {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px; 
+  }
+  
+  .input-container label {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    border-left: none;
+  }
+  
+  .input-container label:hover {
+    background-color: #f7f7f7;
+  }
+  
+  .input-container label:first-child {
+    border-left: 1px solid #ccc; 
+    border-radius: 0 5px 0 0; 
+  }
+
+  #file1{
+    display: flex;
+    align-items: center;
+    width: 7.5rem;
+    margin: 20px auto;
+    padding: 11px;
+    border-color: #ccc;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  #file2{
+    display: flex;
+    align-items: center;
+    width: 7.5rem;
+    margin: 20px auto;
+    padding: 11px;
+    border-color: #ccc;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .job-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
+  }
+
+
+  .freelancer-header-text{
+    margin-left: 5.3rem;
+    /* margin-right: 10rem; */
+    font-size: 1.2rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 450;
+    font-style: normal;
+  }
+
+
+  .post-job-button {
+    position: relative;
+    height: 0.15rem;
+    width: 7%;
+    padding: 1rem;
+    margin-right: 4rem;
+    border: none;
+    border-radius: 100px;
+    background-color: rgb(0, 87, 255,1);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    
+  }
+  .post-job-button:hover{
+    cursor: pointer;
+  }
+  
+  .icon-post {
+    top: 50%;
+    line-height: 1;
+  }
+  
+  .icon-post img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.2rem;
+  }
+  
+
+  
+  .icon-text p {
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-left: 0.2rem;
+    
+  }
+
+  .job-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .company-1 {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    /* background-color: rgb(138, 138, 31); */
+    border: #e7e5e5 solid;
+    padding: 35px;
+    transition: box-shadow 0.2s ease; 
+  }
+  
+  .company-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .company-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+
+
+  .company-1:hover{
+    /* border: #573c3c solid; */
+    box-shadow: 0 0 12px rgba(41, 40, 40, 0.5); 
+  }
+
+
+  /* 888888888888888888888888888888888888888888888*/
+  .footer{
+    bottom: 0;
+    background-color: rgb(19,19,27);
+    color: white;
+    width: 100%;
+    height: 70vh;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-size: 0.3rem; */
+    
+}
+
+
+.footer{
+    margin-top: 3rem;
+    /* display: flex; */
+    flex-wrap: wrap;
+    
+    
+}
+.company{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    vertical-align: center;
+}
+.footer p{
+    
+    font-weight: 700;
+    font-size: 2rem;
+   
+}
+.company ul{
+    display: flex;
+    flex-direction: column;
+   
+
+}
+.company a{
+    /* margin-top: 0.2rem; */
+    opacity: 0.6;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+}
+.company a:hover{
+    cursor: pointer;   
+    text-decoration: underline;
+    opacity: 1;
+    
+}
+.useful_links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.company{
+    margin-right: 1.8rem;
+}
+.social_media i{
+    font-size: 1.5rem;
+    margin-right: 2.7rem;
+    margin-top: 0.8rem;
+    opacity: 0.8;
+    
+    
+}
+
+.social_media i:hover{
+    cursor: pointer;
+    opacity: 1;
+    
+}
+.end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s-m{
+    display: flex;
+    font-size: 1.5rem;
+    margin-top: 0;
+    opacity: 0.8;
+    
+    border-radius: 100%;
+}
+.apps p{
+   
+    color: white;
+    font-weight: 700;
+   
+      
+}
+.fa-instagram:hover{
+color: rgb(206, 17, 165);
+}
+
+.fa-facebook:hover{
+    color: blue;
+}
+.fa-youtube:hover{
+    color: red;
+}
+.line{
+    margin-top: 2rem;
+    width: 93%;
+    height: 20%;
+    border: 1px white solid ;
+    opacity:0.4;
+    margin-top: 3.3rem; 
+    
+}
+.Copyright p{
+    text-align: center;
+    font-size: 1.5rem;
+    opacity: 0.7;
+    margin-top: 4.2rem;
+    margin-bottom: 0;
+}
+
+.header-cat{
+  /* display: flex; */
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 450;
+    font-style: normal;
+    margin-top: 3rem;
+    margin-left: 5.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.categories{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10.2rem;
+  /* margin-right: 1.4rem; */
+  /* margin-left: 6rem; */
+  /* justify-content: space-between; */
+  /* display: flex; */
+  /* display: grid;
+  grid-template-rows: repeat(4, 1fr); */
+  margin-top: 2rem;
+}
+
+.category-sec{
+  justify-content: space-evenly;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.image-sec{
+  margin-right: 1.9rem;
+  height: 15rem;
+  width: 17rem;
+  transition: box-shadow 0.2s ease; 
+  transition: text-decoration 0.5s ease;
+}
+
+.top-right{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+  position: absolute;
+  top: 1rem;
+  right: 10rem;
+}
+
+.top-right:hover{
+  text-decoration: underline;
+}
+
+.image-sec:hover{
+  /* border: #573c3c solid; */
+  box-shadow: 0 0 12px rgba(41, 40, 40, 0.8); 
+  text-decoration: underline;
+}
+
+
+@media (max-width: 1024px) {
+  .company-1 {
+      flex: 1 1 calc(50% - 16px); 
+  }
+
+  .footer{
+    height: 49vh;
+  }
+} 
+
+
+ @media (max-width: 836px) {
+  .company-1 {
+      flex: 1 1 100%; 
+      overflow: hidden;
+      transition: ease 0.2s;
+  }
+}
+
+@media (max-width: 320px) {
+  .company-1 {
+      flex: 1 1 100%; 
+  }
+
+}  
+
+@media only screen and (max-width: 480px) {
+  .company-1 {
+    flex: 1 1 calc(100% - 16px);
+    
+
+  }
+}
+
+@media only screen and (max-width:768px){
+  .header-bar{
+    font-size: small;
+    font-weight: 400;
+    font-family: "Ubuntu", sans-serif;
+  }
+  .footer p{
+    font-size: small;
+    font-weight: 400;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .icon-text {
+      display: none; 
+  }
+
+  .post-job-button {
+      justify-content: center; 
+  }
+
+  .icon-post img {
+      margin: 0 auto; 
+  }
+
+  .footer{
+    height: 45vh;
+  }
+} 
+
+
+@media (max-width: 768px) {
+  .footer .company ul a {
+      display: none; 
+  }
+  
+  .footer .company ul p {
+      font-weight: normal; 
+        text-align: left;
+      margin-bottom: 0;
+  }
+  
+  .social_media i {
+      display: inline-block; 
+      margin-right: 10px;
+  }
+
+  .footer{
+    height: 35vh;
+  }
+  
+  .footer .company ul {
+      margin-bottom: 20px;
+  }
+
+  .h1-header{
+    font-size: 3rem;
+  }
+
+  .para-header{
+    font-size: medium;
+  }
+
+  .social_media{
+    display: none;
+  } 
+
+  .responsive:hover{
+    box-shadow: 0px 25px 68px 6px rgb(255 33 63 / 50%);
+  }
+}
+
+
+@media (max-width:900px){
+  .nav{
+    display: flex;
+    height: 20vh;
+    /* flex-direction: column; */
+  }
+  .desc{
+    width: 100%;
+  }
+  .login a{
+    margin-left: 3rem;
+  }
+}
+
+/* 
+@media (max-width: 1200px) {
+  .header-pic {
+    height: 15rem;
+  }
+  .job-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 992px) {
+  .header-pic {
+    height: 12rem;
+  }
+  .job-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .input-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .input-container label {
+    margin-top: 10px;
+  }
+} */ 
+
+
+/* @media (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+  .header-pic {
+    height: 10rem;
+  }
+  .header-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .list-bar {
+    flex-direction: column;
+  }
+  .list-bar li {
+    margin: 10px 0;
+  }
+  .job-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .freelancer-header-text {
+    margin-bottom: 10px;
+  }
+  .post-job-button {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .header-pic {
+    height: 8rem;
+  }
+  .job-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .company-1 {
+    padding: 20px;
+  }
+  .company-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .company-logo {
+    margin-bottom: 10px;
+  }
+} */
